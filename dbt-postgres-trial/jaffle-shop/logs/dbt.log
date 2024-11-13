@@ -1,0 +1,287 @@
+[0m16:46:11.453099 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000199BCABABD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000199BCB0DB50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000199BCB0E110>]}
+
+
+============================== 16:46:11.453099 | 93f8e6b3-c1cf-4efc-8609-85b112760958 ==============================
+[0m16:46:11.453099 [info ] [MainThread]: Running with dbt=1.9.0-b4
+[0m16:46:11.453099 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\coutiert\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\w\\sources\\PERSO\\dbt-postgres-trial\\jaffle-shop\\logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run --project-dir C:\\w\\sources\\PERSO\\dbt-postgres-trial\\jaffle-shop', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:46:11.468817 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'jaffle_shop'
+[0m16:46:11.471691 [debug] [MainThread]: Command `dbt run` failed at 16:46:11.471056 after 0.10 seconds
+[0m16:46:11.472738 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000199BCABA210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000199BCB0F1D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000199B65FAF50>]}
+[0m16:46:11.473200 [debug] [MainThread]: Flushing usage events
+[0m16:46:21.537420 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:46:59.935734 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E42F51B310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E42F5186D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E42F518610>]}
+
+
+============================== 16:46:59.939721 | dc446569-0fc9-4a25-a649-ad7f75a4c717 ==============================
+[0m16:46:59.939721 [info ] [MainThread]: Running with dbt=1.9.0-b4
+[0m16:46:59.945408 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\w\\sources\\PERSO\\dbt-postgres-trial\\jaffle-shop', 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\w\\sources\\PERSO\\dbt-postgres-trial\\jaffle-shop\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run --project-dir C:\\w\\sources\\PERSO\\dbt-postgres-trial\\jaffle-shop --profiles-dir C:\\w\\sources\\PERSO\\dbt-postgres-trial\\jaffle-shop', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:46:59.945908 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+
+User config should be moved from the 'config' key in profiles.yml to the 'flags' key in dbt_project.yml.
+[0m16:46:59.947344 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'dc446569-0fc9-4a25-a649-ad7f75a4c717', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E42F518650>]}
+[0m16:46:59.948814 [info ] [MainThread]: target not specified in profile 'jaffle_shop', using 'default'
+[0m16:46:59.951855 [error] [MainThread]: Encountered an error:
+Runtime Error
+  The profile 'jaffle_shop' does not have a target named 'default'. The valid target names for this profile are:
+   - dev
+[0m16:46:59.954064 [debug] [MainThread]: Command `dbt run` failed at 16:46:59.954064 after 0.09 seconds
+[0m16:46:59.955142 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E42F344C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E42F574E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E42F5186D0>]}
+[0m16:46:59.955142 [debug] [MainThread]: Flushing usage events
+[0m16:47:09.992350 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:48:01.277640 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC3364E590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC336AE850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC336AE8D0>]}
+
+
+============================== 16:48:01.277640 | 5361e2e5-7993-46b1-99d8-6d20e01e9475 ==============================
+[0m16:48:01.277640 [info ] [MainThread]: Running with dbt=1.9.0-b4
+[0m16:48:01.285298 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\w\\sources\\PERSO\\dbt-postgres-trial\\jaffle-shop', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\w\\sources\\PERSO\\dbt-postgres-trial\\jaffle-shop\\logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt run --project-dir C:\\w\\sources\\PERSO\\dbt-postgres-trial\\jaffle-shop --profiles-dir C:\\w\\sources\\PERSO\\dbt-postgres-trial\\jaffle-shop', 'send_anonymous_usage_stats': 'True'}
+[0m16:48:01.285298 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+
+User config should be moved from the 'config' key in profiles.yml to the 'flags' key in dbt_project.yml.
+[0m16:48:01.287391 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '5361e2e5-7993-46b1-99d8-6d20e01e9475', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC336AF110>]}
+[0m16:48:01.546757 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5361e2e5-7993-46b1-99d8-6d20e01e9475', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC336DED50>]}
+[0m16:48:01.581396 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5361e2e5-7993-46b1-99d8-6d20e01e9475', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC3074A890>]}
+[0m16:48:01.581396 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m16:48:01.619705 [debug] [MainThread]: checksum: 0d3acddb5afbce98f9888b13248063cae3d09e6e329263e3ffe4b2a6aa072c8d, vars: {}, profile: , target: , version: 1.9.0b4
+[0m16:48:01.619705 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m16:48:01.619705 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '5361e2e5-7993-46b1-99d8-6d20e01e9475', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC33A94290>]}
+[0m16:48:03.436719 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.jaffle_shop.marts.core
+- models.jaffle_shop.staging
+[0m16:48:03.449920 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5361e2e5-7993-46b1-99d8-6d20e01e9475', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC33B424D0>]}
+[0m16:48:03.572769 [debug] [MainThread]: Wrote artifact WritableManifest to C:\w\sources\PERSO\dbt-postgres-trial\jaffle-shop\target\manifest.json
+[0m16:48:03.578071 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\w\sources\PERSO\dbt-postgres-trial\jaffle-shop\target\semantic_manifest.json
+[0m16:48:03.659602 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5361e2e5-7993-46b1-99d8-6d20e01e9475', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC33CEFED0>]}
+[0m16:48:03.660684 [info ] [MainThread]: Found 1 model, 4 data tests, 2 sources, 428 macros
+[0m16:48:03.662640 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5361e2e5-7993-46b1-99d8-6d20e01e9475', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC33D84E90>]}
+[0m16:48:03.664686 [info ] [MainThread]: 
+[0m16:48:03.665605 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:48:03.666604 [info ] [MainThread]: 
+[0m16:48:03.668154 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m16:48:03.670104 [debug] [ThreadPool]: Acquiring new postgres connection 'list_raw'
+[0m16:48:06.564653 [debug] [ThreadPool]: Using postgres connection "list_raw"
+[0m16:48:06.572784 [debug] [ThreadPool]: On list_raw: /* {"app": "dbt", "dbt_version": "1.9.0b4", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_raw"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m16:48:06.572784 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:48:06.604180 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.031 seconds
+[0m16:48:06.605682 [debug] [ThreadPool]: On list_raw: Close
+[0m16:48:06.606683 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_raw, now create_raw_dev)
+[0m16:48:06.607179 [debug] [ThreadPool]: Creating schema "database: "raw"
+schema: "dev"
+"
+[0m16:48:06.613180 [debug] [ThreadPool]: Using postgres connection "create_raw_dev"
+[0m16:48:06.613680 [debug] [ThreadPool]: On create_raw_dev: BEGIN
+[0m16:48:06.613680 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:48:06.623160 [debug] [ThreadPool]: SQL status: BEGIN in 0.009 seconds
+[0m16:48:06.623929 [debug] [ThreadPool]: Using postgres connection "create_raw_dev"
+[0m16:48:06.624429 [debug] [ThreadPool]: On create_raw_dev: /* {"app": "dbt", "dbt_version": "1.9.0b4", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "create_raw_dev"} */
+create schema if not exists "dev"
+[0m16:48:06.625429 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.001 seconds
+[0m16:48:06.626929 [debug] [ThreadPool]: On create_raw_dev: COMMIT
+[0m16:48:06.626929 [debug] [ThreadPool]: Using postgres connection "create_raw_dev"
+[0m16:48:06.627430 [debug] [ThreadPool]: On create_raw_dev: COMMIT
+[0m16:48:06.631433 [debug] [ThreadPool]: SQL status: COMMIT in 0.004 seconds
+[0m16:48:06.632435 [debug] [ThreadPool]: On create_raw_dev: Close
+[0m16:48:06.634431 [debug] [ThreadPool]: Acquiring new postgres connection 'list_raw_dev'
+[0m16:48:06.640869 [debug] [ThreadPool]: Using postgres connection "list_raw_dev"
+[0m16:48:06.640869 [debug] [ThreadPool]: On list_raw_dev: BEGIN
+[0m16:48:06.642952 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:48:06.651714 [debug] [ThreadPool]: SQL status: BEGIN in 0.009 seconds
+[0m16:48:06.652214 [debug] [ThreadPool]: Using postgres connection "list_raw_dev"
+[0m16:48:06.652713 [debug] [ThreadPool]: On list_raw_dev: /* {"app": "dbt", "dbt_version": "1.9.0b4", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_raw_dev"} */
+select
+      'raw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dev'
+    union all
+    select
+      'raw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dev'
+    union all
+    select
+      'raw' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dev'
+  
+[0m16:48:06.656728 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.003 seconds
+[0m16:48:06.658228 [debug] [ThreadPool]: On list_raw_dev: ROLLBACK
+[0m16:48:06.659712 [debug] [ThreadPool]: On list_raw_dev: Close
+[0m16:48:06.665253 [debug] [MainThread]: Using postgres connection "master"
+[0m16:48:06.665253 [debug] [MainThread]: On master: BEGIN
+[0m16:48:06.665253 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:48:06.700460 [debug] [MainThread]: SQL status: BEGIN in 0.034 seconds
+[0m16:48:06.700915 [debug] [MainThread]: Using postgres connection "master"
+[0m16:48:06.701395 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.9.0b4", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m16:48:06.709719 [debug] [MainThread]: SQL status: SELECT 0 in 0.007 seconds
+[0m16:48:06.712270 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5361e2e5-7993-46b1-99d8-6d20e01e9475', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC35193A10>]}
+[0m16:48:06.713295 [debug] [MainThread]: On master: ROLLBACK
+[0m16:48:06.715221 [debug] [MainThread]: Using postgres connection "master"
+[0m16:48:06.715724 [debug] [MainThread]: On master: BEGIN
+[0m16:48:06.719021 [debug] [MainThread]: SQL status: BEGIN in 0.003 seconds
+[0m16:48:06.719021 [debug] [MainThread]: On master: COMMIT
+[0m16:48:06.719021 [debug] [MainThread]: Using postgres connection "master"
+[0m16:48:06.720578 [debug] [MainThread]: On master: COMMIT
+[0m16:48:06.721347 [debug] [MainThread]: SQL status: COMMIT in 0.001 seconds
+[0m16:48:06.721347 [debug] [MainThread]: On master: Close
+[0m16:48:06.726946 [debug] [Thread-1 (]: Began running node model.jaffle_shop.stg_custo
+[0m16:48:06.726946 [info ] [Thread-1 (]: 1 of 1 START sql view model dev.stg_custo ...................................... [RUN]
+[0m16:48:06.726946 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.jaffle_shop.stg_custo'
+[0m16:48:06.726946 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop.stg_custo
+[0m16:48:06.736685 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop.stg_custo"
+[0m16:48:06.738628 [debug] [Thread-1 (]: Began executing node model.jaffle_shop.stg_custo
+[0m16:48:06.761376 [debug] [Thread-1 (]: Writing runtime sql for node "model.jaffle_shop.stg_custo"
+[0m16:48:06.774486 [debug] [Thread-1 (]: Using postgres connection "model.jaffle_shop.stg_custo"
+[0m16:48:06.776130 [debug] [Thread-1 (]: On model.jaffle_shop.stg_custo: BEGIN
+[0m16:48:06.777130 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m16:48:06.799704 [debug] [Thread-1 (]: SQL status: BEGIN in 0.022 seconds
+[0m16:48:06.800676 [debug] [Thread-1 (]: Using postgres connection "model.jaffle_shop.stg_custo"
+[0m16:48:06.801079 [debug] [Thread-1 (]: On model.jaffle_shop.stg_custo: /* {"app": "dbt", "dbt_version": "1.9.0b4", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_custo"} */
+
+  create view "raw"."dev"."stg_custo__dbt_tmp"
+    
+    
+  as (
+    with 
+
+source as (
+
+  select * from "raw"."jaffle_shop"."customers"
+
+),
+
+transformed as (
+
+  select 
+
+    id as customer_id,
+    last_name as customer_last_name,
+    first_name as customer_first_name,
+    first_name || ' ' || last_name as full_name
+
+  from source
+
+)
+
+select * from transformed
+  );
+[0m16:48:06.804079 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.002 seconds
+[0m16:48:06.811108 [debug] [Thread-1 (]: Using postgres connection "model.jaffle_shop.stg_custo"
+[0m16:48:06.812180 [debug] [Thread-1 (]: On model.jaffle_shop.stg_custo: /* {"app": "dbt", "dbt_version": "1.9.0b4", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_custo"} */
+alter table "raw"."dev"."stg_custo__dbt_tmp" rename to "stg_custo"
+[0m16:48:06.815006 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m16:48:06.825134 [debug] [Thread-1 (]: On model.jaffle_shop.stg_custo: COMMIT
+[0m16:48:06.825134 [debug] [Thread-1 (]: Using postgres connection "model.jaffle_shop.stg_custo"
+[0m16:48:06.825134 [debug] [Thread-1 (]: On model.jaffle_shop.stg_custo: COMMIT
+[0m16:48:06.836240 [debug] [Thread-1 (]: SQL status: COMMIT in 0.004 seconds
+[0m16:48:06.842977 [debug] [Thread-1 (]: Applying DROP to: "raw"."dev"."stg_custo__dbt_backup"
+[0m16:48:06.846765 [debug] [Thread-1 (]: Using postgres connection "model.jaffle_shop.stg_custo"
+[0m16:48:06.846765 [debug] [Thread-1 (]: On model.jaffle_shop.stg_custo: /* {"app": "dbt", "dbt_version": "1.9.0b4", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.stg_custo"} */
+drop view if exists "raw"."dev"."stg_custo__dbt_backup" cascade
+[0m16:48:06.850371 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.002 seconds
+[0m16:48:06.852879 [debug] [Thread-1 (]: On model.jaffle_shop.stg_custo: Close
+[0m16:48:06.856026 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5361e2e5-7993-46b1-99d8-6d20e01e9475', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC33C5AA50>]}
+[0m16:48:06.857290 [info ] [Thread-1 (]: 1 of 1 OK created sql view model dev.stg_custo ................................. [[32mCREATE VIEW[0m in 0.13s]
+[0m16:48:06.858795 [debug] [Thread-1 (]: Finished running node model.jaffle_shop.stg_custo
+[0m16:48:06.860848 [debug] [MainThread]: Using postgres connection "master"
+[0m16:48:06.861399 [debug] [MainThread]: On master: BEGIN
+[0m16:48:06.861794 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:48:06.892391 [debug] [MainThread]: SQL status: BEGIN in 0.030 seconds
+[0m16:48:06.893402 [debug] [MainThread]: On master: COMMIT
+[0m16:48:06.894416 [debug] [MainThread]: Using postgres connection "master"
+[0m16:48:06.895057 [debug] [MainThread]: On master: COMMIT
+[0m16:48:06.897986 [debug] [MainThread]: SQL status: COMMIT in 0.002 seconds
+[0m16:48:06.897986 [debug] [MainThread]: On master: Close
+[0m16:48:06.898982 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:48:06.899561 [debug] [MainThread]: Connection 'create_raw_dev' was properly closed.
+[0m16:48:06.899992 [debug] [MainThread]: Connection 'list_raw_dev' was properly closed.
+[0m16:48:06.900484 [debug] [MainThread]: Connection 'model.jaffle_shop.stg_custo' was properly closed.
+[0m16:48:06.901005 [info ] [MainThread]: 
+[0m16:48:06.901987 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 3.23 seconds (3.23s).
+[0m16:48:06.902983 [debug] [MainThread]: Command end result
+[0m16:48:06.923846 [debug] [MainThread]: Wrote artifact WritableManifest to C:\w\sources\PERSO\dbt-postgres-trial\jaffle-shop\target\manifest.json
+[0m16:48:06.926116 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\w\sources\PERSO\dbt-postgres-trial\jaffle-shop\target\semantic_manifest.json
+[0m16:48:06.928787 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\w\sources\PERSO\dbt-postgres-trial\jaffle-shop\target\run_results.json
+[0m16:48:06.928787 [info ] [MainThread]: 
+[0m16:48:06.928787 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:48:06.936867 [info ] [MainThread]: 
+[0m16:48:06.937869 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m16:48:06.939915 [debug] [MainThread]: Command `dbt run` succeeded at 16:48:06.939915 after 5.73 seconds
+[0m16:48:06.939915 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC3368D290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC33368C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AC2D07A690>]}
+[0m16:48:06.940864 [debug] [MainThread]: Flushing usage events
+[0m16:48:16.984346 [debug] [MainThread]: An error was encountered while trying to flush usage events
